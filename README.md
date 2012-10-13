@@ -11,6 +11,7 @@ Thanks to Tim Burks for Nu Lisp!
 Add the static libraries and .h .m files in the "Remote" folder into your XCode project.
 
 In the app delegate .h file add the following above @interface:
+
     @class SPNuRemote;
 
 In the app delegate .m file
@@ -28,11 +29,20 @@ write
 Thats it!
 
 First run the simulator app.
-Then do a lein swank in objc-repl and complile the core.clj
+Then do a
+
+     lein swank
+
+in objc-repl and complile the core.clj
 
 To execute a line of code in iOS simulator call the sim function.
 
-For example to do NSLog("Hello ObjC from Clojure") do
+For example to do
+
+    NSLog("Hello ObjC from Clojure")
+
+Use the following method
+
     objc-repl.core> (sim "(log \"Hello ObjC from Clojure\")")
 
 General syntax is
@@ -52,6 +62,7 @@ Support there is a button synthesized inside a class rootViewController, and we 
     objc-repl.core> (sim "((root button) setBackgroundColor:(UIColor greenColor))")
 
 Like changing a button frame
+
     objc-repl.core> (sim "(button setFrame:'(10 10 20 20))")
 
 
