@@ -15,6 +15,7 @@ In the app delegate .h file add the following above @interface:
     @class SPNuRemote;
 
 In the app delegate .m file
+
     #import "NuRemote/SPNuRemote.h"
 
 and somewhere in the function
