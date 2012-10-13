@@ -33,6 +33,8 @@ write
 
 Thats it!
 
+# Running
+
 First run the simulator app.
 Then do a
 
