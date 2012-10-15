@@ -63,7 +63,7 @@ and, structs like CGRect for frames are lists
 
 # Example:
 
-Support there is a button synthesized inside a class rootViewController, and we want to change its backgroundcolor:
+Suppose there is a button synthesized inside a class rootViewController, and we want to change its backgroundcolor:
 
     objc-repl.core> (sim "(set root (((UIApplication sharedApplication) delegate) viewController))")
     objc-repl.core> (sim "((root button) setBackgroundColor:(UIColor greenColor))")
